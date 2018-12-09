@@ -1032,6 +1032,9 @@ template {
   }
 }
 /* --------------------------------------------- */
+/* VARIABLES */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
 /* GENERAL STYLES */
 /* --------------------------------------------- */
 * {
@@ -1076,6 +1079,58 @@ header {
 }
 
 /* --------------------------------------------- */
+/* FEATURES SECTION */
+/* --------------------------------------------- */
+.section-features {
+  margin: 70px;
+}
+
+.section-features .row {
+  margin-top: 40px;
+}
+
+.ingress {
+  padding: 0 18vh;
+  line-height: 3vh;
+  font-size: 20px;
+}
+
+.box {
+  padding: 2%;
+  height: 380px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  outline: 2px solid transparent;
+}
+
+.box:hover {
+  outline: 2px solid #f0f0f0;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
+  box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.icon {
+  font-size: 8vh;
+  color: #e67e22;
+  margin: 40px 0px;
+}
+
+.feature-description {
+  font-size: 18px;
+  line-height: 3vh;
+}
+
+/* --------------------------------------------- */
+/* FOOD SHOWCASE SECTION */
+/* --------------------------------------------- */
+.section-food-showcase {
+  max-width: 100%;
+}
+
+/* --------------------------------------------- */
 /* IMPORTING ADDITIONAL STYLES */
 /* --------------------------------------------- */
 h1 {
@@ -1086,6 +1141,28 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 35px;
+}
+
+h2 {
+  font-size: 4vh;
+  font-weight: 300;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2::after {
+  display: block;
+  width: 100px;
+  background-color: #e67e22;
+  height: 2px;
+  content: " ";
+  margin: 30px auto;
+}
+
+h3 {
+  font-size: 100%;
+  font-weight: 300;
+  line-height: 6vh;
 }
 
 .secondary-button:link, .main-button:link,

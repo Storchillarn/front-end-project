@@ -2,7 +2,7 @@
 %button:visited {
     text-decoration: none;
     padding: 10px 30px;
-    border: 1px solid #e67e22;
+    border: 1px solid $brand-orange;
     border-radius: 30px;
     margin-right: 20px;
     transition-timing-function: ease-in-out;
@@ -13,12 +13,12 @@
 .main-button {
     @extend %button;
     color: #fff;
-    background-color: #e67e22;
+    background-color: $brand-orange;
 }
 
 .secondary-button {
     @extend %button;
-    color: #e67e22;
+    color: $brand-orange;
 
 }
 
@@ -29,6 +29,6 @@
 
 .secondary-button:hover,
 .secondary-button:active {
-    background-color: #e67e22;
+    background-color: $brand-orange;
     color: #fff;
 }

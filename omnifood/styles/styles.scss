@@ -6,6 +6,12 @@
 @import 'grid';
 
 /* --------------------------------------------- */
+/* VARIABLES */
+/* --------------------------------------------- */
+
+$brand-orange: #e67e22;
+
+/* --------------------------------------------- */
 /* GENERAL STYLES */
 /* --------------------------------------------- */
 
@@ -50,6 +56,61 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* --------------------------------------------- */
+/* FEATURES SECTION */
+/* --------------------------------------------- */
+
+.section-features {
+    margin: 70px;
+}
+
+.section-features .row {
+    margin-top: 40px;
+}
+
+.ingress {
+    padding: 0 18vh;
+    line-height: 3vh;
+    font-size: 20px;
+}
+
+.box {
+    padding: 2%;
+    height: 380px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    outline: 2px solid transparent;
+}
+
+.box:hover {
+    outline: 2px solid #f0f0f0;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
+    box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.icon {
+    font-size: 8vh;
+    color: $brand-orange;
+    margin: 40px 0px;
+}
+
+.feature-description {
+    font-size: 18px;
+    line-height: 3vh;
+}
+
+
+/* --------------------------------------------- */
+/* FOOD SHOWCASE SECTION */
+/* --------------------------------------------- */
+
+.section-food-showcase {
+    max-width: 100%;
 }
 
 /* --------------------------------------------- */
