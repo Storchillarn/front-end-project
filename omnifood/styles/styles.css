@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* --------------------------------------------- */
 /* IMPORTING SCSS COMPONENT STYLES AND RESET CSS */
 /* --------------------------------------------- */
@@ -1052,6 +1053,23 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  border-top: #e8e8e8;
+}
+
 /* --------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* --------------------------------------------- */
@@ -1077,6 +1095,14 @@ html {
   transition-timing-function: linear;
 }
 
+section {
+  padding: 80px 0;
+}
+
+.grey {
+  background-color: #f4f4f4;
+}
+
 /* --------------------------------------------- */
 /* HEADER SECTION */
 /* --------------------------------------------- */
@@ -1098,19 +1124,12 @@ header {
 /* --------------------------------------------- */
 /* FEATURES SECTION */
 /* --------------------------------------------- */
-.section-features {
-  margin: 70px;
-}
-
-.section-features .row {
-  margin-top: 40px;
-}
-
 .ingress {
   line-height: 3vh;
   font-size: 20px;
   width: 70%;
   margin-left: 15%;
+  margin-bottom: 20px;
 }
 
 .icon {
@@ -1127,9 +1146,12 @@ header {
 /* --------------------------------------------- */
 /* FOOD SHOWCASE SECTION */
 /* --------------------------------------------- */
+.section-food-showcase {
+  padding: 0;
+}
+
 .food-showcase {
   width: 100%;
-  list-style: none;
 }
 .food-showcase li {
   display: block;
@@ -1169,18 +1191,206 @@ figcaption {
 /* --------------------------------------------- */
 /* HOW IT WORKS SECTION */
 /* --------------------------------------------- */
+.section-how-it-works {
+  padding-top: 60px;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 50px;
+}
+
 .app-image {
   width: 40%;
 }
 
-.steps-number {
-  display: inline-block;
-  padding: 10px 10px;
-  color: #e67e22;
-  border: 2px solid #e67e22;
-  border-radius: 50px;
+.how-to-step {
+  margin-bottom: 50px;
 }
 
+.steps-number {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  font-size: 150%;
+  padding: 4px;
+  float: left;
+  margin-right: 5%;
+}
+
+.steps-copy {
+  padding-top: 2px;
+}
+
+div.how-to-step:last-of-type {
+  margin-bottom: 70px;
+}
+
+.button-app {
+  margin-right: 10px;
+  width: auto;
+  height: 50px;
+}
+
+/* --------------------------------------------- */
+/* LOCATION SECTION */
+/* --------------------------------------------- */
+.location-info li {
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.location-info p {
+  float: left;
+  font-size: 90%;
+  padding-top: 4px;
+}
+.location-info a {
+  font-size: 90%;
+}
+
+.small-icon {
+  float: left;
+  font-size: 120%;
+  color: #e67e22;
+  margin-right: 15px;
+  width: 20px;
+  text-align: center;
+}
+
+.location-image {
+  width: 90%;
+  height: auto;
+}
+
+.mail {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid #e67e22;
+  transition: 0.1s linear;
+}
+
+.mail:hover,
+.mail:active {
+  color: #000000;
+  border: none;
+}
+
+/* --------------------------------------------- */
+/* TESTIMONIAL SECTION */
+/* --------------------------------------------- */
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../content/img/back-customers.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.section-testimonials h2 {
+  color: white;
+}
+
+blockquote {
+  color: white;
+  font-style: italic;
+  padding-right: 4%;
+  line-height: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote:before {
+  content: "“";
+  display: block;
+  font-size: 500%;
+  position: absolute;
+  top: -10px;
+  left: -15px;
+}
+
+.testimonial-image {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+cite {
+  color: white;
+  margin-bottom: 35px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* --------------------------------------------- */
+/* PRICING SECTION */
+/* --------------------------------------------- */
+.border-box {
+  background-color: #FFF;
+  margin: 0 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 3px #f0f0f0;
+}
+
+.price-box:first-child {
+  background-color: #fcfcfc;
+  border-radius: 5px;
+}
+
+.price-box {
+  padding: 5% 5%;
+}
+.price-box li {
+  padding: 7px;
+}
+
+.price-box li:before {
+  content: "✓";
+  color: #e67e22;
+  margin-right: 20px;
+  font-weight: 100;
+  font-size: 70%;
+}
+
+li.not-included:before {
+  content: "✕";
+}
+
+.price-box h3 {
+  font-size: 130%;
+  line-height: 0;
+  margin-top: 10px;
+}
+
+.pricing {
+  color: #e67e22;
+  margin: 25px 0 10px 0;
+}
+
+.price-figure {
+  font-size: 270%;
+  font-weight: 100;
+  margin-right: 10px;
+}
+
+.pricing-disclaimer {
+  font-size: 80%;
+}
+
+.price-box:last-child {
+  text-align: center;
+}
+
+/* --------------------------------------------- */
+/* CONTACT US SECTION */
+/* --------------------------------------------- */
 /* --------------------------------------------- */
 /* IMPORTING ADDITIONAL STYLES */
 /* --------------------------------------------- */
@@ -1199,6 +1409,7 @@ h2 {
   font-weight: 300;
   text-align: center;
   margin: 20px 0;
+  text-transform: uppercase;
 }
 
 h2::after {
@@ -1214,6 +1425,7 @@ h3 {
   font-size: 100%;
   font-weight: 300;
   line-height: 6vh;
+  text-transform: uppercase;
 }
 
 .secondary-button:link, .main-button:link,
