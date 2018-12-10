@@ -39,6 +39,23 @@ html {
     margin: 0 auto;
 }
 
+.box {
+    padding: 2%;
+    height: 380px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    outline: 2px solid transparent;
+}
+
+.box:hover {
+    outline: 2px solid #f0f0f0;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
+    box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
 /* --------------------------------------------- */
 /* HEADER SECTION */
 /* --------------------------------------------- */
@@ -71,32 +88,16 @@ header {
 }
 
 .ingress {
-    padding: 0 18vh;
     line-height: 3vh;
     font-size: 20px;
-}
-
-.box {
-    padding: 2%;
-    height: 380px;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    outline: 2px solid transparent;
-}
-
-.box:hover {
-    outline: 2px solid #f0f0f0;
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
-    -moz-box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
-    box-shadow: 5px 5px 10px 0px rgba(145, 145, 145, 0.7);
-    transition-duration: 0.2s;
-    transition-timing-function: linear;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .icon {
     font-size: 8vh;
     color: $brand-orange;
-    margin: 40px 0px;
+    display: block;
 }
 
 .feature-description {
@@ -109,8 +110,62 @@ header {
 /* FOOD SHOWCASE SECTION */
 /* --------------------------------------------- */
 
-.section-food-showcase {
-    max-width: 100%;
+
+.food-showcase {
+    width: 100%;
+    list-style: none;
+    li {
+        display: block;
+        width: 25%;
+        float: left;
+        height: 360px;
+    }
+}
+
+.food-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    img {
+        width: 100%;
+        height: auto;
+        transform: scale(1.15);
+        transition: 0.4s ease-out;
+        opacity: 0.6;
+    }
+    
+    img:hover {
+        transform: scale(1.03);
+        opacity: 1;
+    }
+}
+
+figcaption {
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-25%, -25%);
+    color: white;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+/* --------------------------------------------- */
+/* HOW IT WORKS SECTION */
+/* --------------------------------------------- */
+
+
+.app-image {
+    width: 40%;
+}
+
+.steps-number {
+    display: inline-block;
+    padding: 10px 10px;
+    color: $brand-orange;
+    border: 2px solid $brand-orange;
+    border-radius: 50px;
 }
 
 /* --------------------------------------------- */
