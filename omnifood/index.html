@@ -273,13 +273,13 @@
             <h2>WE'RE HAPPY TO HEAR FROM YOU</h2>
         </div>
         <div class="row">
-            <form class="contact-us-form">
+            <form method="post" class="contact-us-form">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Name</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="text" name="name" class="form-field" id="name" placeholder="Fullname" />
+                        <input type="text" name="name" class="form-field" id="name" placeholder="Your name" />
                     </div>    
                 </div>
                 <div class="row">
@@ -320,8 +320,39 @@
                         <textarea name="message" class="form-field" id="message" placeholder="Your message"></textarea>
                     </div>    
                 </div>
+                <div class="row">
+                    <div class="col span-2-of-2">
+                        <input type="submit" class="main-button submit" value="Send it!" / >
+                    </div>
+                </div>
             </form>
         </div>
     </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-link-list">
+                    <li><a class="footer-link" href="#">About us</a></li>
+                    <li><a class="footer-link" href="#">Blog</a></li>
+                    <li><a class="footer-link" href="#">Press</a></li>
+                    <li><a class="footer-link" href="#">iOS App</a></li>
+                    <li><a class="footer-link" href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="socialmedia-links">
+                    <li><a href="#"><i class="small-icon ion-logo-facebook"></i></a></li>
+                    <li><a href="#"><i class="small-icon ion-logo-twitter"></i></a></li>
+                    <li><a href="#"><i class="small-icon ion-logo-instagram"></i></a></li>
+                    <li><a href="#"><i class="small-icon ion-logo-googleplus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-base">
+            <div class="row">
+                <p class="copyright">Copyright © 2015 by Omnifood. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>    
 </html>
