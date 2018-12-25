@@ -25,7 +25,7 @@ html {
     background-color: #fff;
     color: #5d5d5d;
     font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
 }
@@ -44,12 +44,6 @@ ul {
 
 hr {
     border-top: #e8e8e8;
-}
-
-input,
-select,
-textbox {
-    /*font-family: 'Lato', 'Arial', sans-serif;*/
 }
 
 /* --------------------------------------------- */
@@ -114,7 +108,7 @@ header {
 
 .ingress {
     line-height: 4vh;
-    font-size: 20px;
+    font-size: 80%;
     width: 70%;
     margin-left: 15%;
     margin-bottom: 20px;
@@ -127,7 +121,7 @@ header {
 }
 
 .feature-description {
-    font-size: 18px;
+    font-size: 75%;
     line-height: 3vh;
 }
 
@@ -183,10 +177,6 @@ figcaption {
 /* HOW IT WORKS SECTION */
 /* --------------------------------------------- */
 
-.section-how-it-works {
-    padding-top: 60px;
-}
-
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
@@ -214,7 +204,7 @@ figcaption {
     width: 50px;
     text-align: center;
     font-size: 150%;
-    padding: 4px;
+    padding: 1px;
     float: left;
     margin-right: 5%;
 }
@@ -265,7 +255,7 @@ div.how-to-step:last-of-type {
 }
 
 .location-image {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -347,6 +337,7 @@ cite {
 
 .price-box {
     padding: 5% 5%;
+    font-size: 90%;
 
     li {
         padding: 7px;
@@ -433,7 +424,7 @@ input {
 }
 
 select {
-    height: 40px;
+    height: 45px;
 }
 
 *:focus {outline: none;}

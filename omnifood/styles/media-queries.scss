@@ -78,11 +78,6 @@
         margin-left: 10%;
     }
     
-    .box {
-        width: 49%;
-        height: auto;
-    }
-    
     .box:last-child,
     .box:first-child {
         margin: 0;
@@ -105,4 +100,147 @@
 /* STYLES FOR SMALLER SMARTPHONE, 0-480px */
 @media only screen and (max-width: 480px) {
     
+    section {
+        padding: 40px 0;
+    }
+    
+    h1 {
+        font-size: 90%;
+        margin-bottom: 15px;
+    }
+    
+    h2 {
+        font-size: 100%;
+        padding: 0 10px;
+    }
+    
+    .price-box h3 {
+        padding: 15px;
+    }
+    
+    .logo {
+        width: 50px;
+        margin-top: 5px;
+    }
+    
+    .menu {
+        margin-top: 15px;
+        
+        li {
+            margin-left: 10px;
+            font-size: 30%;
+        }
+    }
+    
+    .secondary-button, .main-button {
+        padding: 5px 15px;
+        margin-right: 10px;
+        font-size: 60%;
+    }
+    
+    .ingress {
+        font-size: 60%;
+    }
+    
+    .box {
+        height: auto;
+        padding: 15px 35px;
+    }
+    
+    .feature-description {
+        line-height: 5vh;
+        font-size: 60%;
+    }
+    
+    .icon {
+        font-size: 220%;
+    }
+    
+    .food-showcase li {
+        width: 50%;
+    }
+    
+    .steps-box:first-child {
+        width: 35%;
+    }
+    
+    .steps-box:last-child {
+        width: 65%;
+        margin-top: 10px;
+    }
+    
+    .app-image {
+        width: 80%;
+    }
+    
+    .steps-number {
+        height: 25px;
+        width: 25px;
+        font-size: 80%;
+        padding: 0;
+        margin-right: 5%;
+    }
+    
+    .steps-copy {
+        font-size: 50%;
+        padding-left: 35px;
+        text-align: justify;
+    }
+    
+    div.how-to-step:last-of-type {
+        margin-bottom: 20px;
+    }
+    
+    .button-app {
+        margin-right: 0px;
+        width: auto;
+        height: 25px;
+    }
+
+    .location-info {
+        margin-left: 15px;
+    }
+    
+    .location-image {
+        margin-top: 15px;
+    }
+    
+    .section-locations h3 {
+        padding: 15px;
+    }
+    
+    blockquote {
+        padding: 0 5%;
+        font-size: 70%;
+    }
+    
+    blockquote:before {
+        left: 5px;
+    }
+    
+    figure {
+        margin: 0 5%;
+    }
+    
+    .price-box h3 {
+        font-size: 100%;
+    }
+    
+    .price-box {
+        font-size: 70%;
+        margin-top: 10px;
+    }
+    
+    .pricing {
+        margin-top: 5px;
+    }
+    
+    .contact-us-form {
+        width: 80%;
+        font-size: 70%;
+    }
+    
+    input[type=email], input[type=text], input[type=checkbox], textarea, select {
+        margin-bottom: 10px;
+    }
 }
