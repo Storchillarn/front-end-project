@@ -113,7 +113,7 @@ header {
 /* --------------------------------------------- */
 
 .ingress {
-    line-height: 3vh;
+    line-height: 4vh;
     font-size: 20px;
     width: 70%;
     margin-left: 15%;
@@ -202,7 +202,7 @@ figcaption {
 }
 
 .how-to-step {
-    margin-bottom: 50px;
+    margin-bottom: 3vw;
 }
 
 .steps-number {
@@ -399,9 +399,13 @@ li.not-included:before {
     margin: auto;
 }
 
-.form-field {
+input[type=email],
+input[type=text],
+textarea,
+select {
     width: 100%;
     padding: 8px 5px;
+    border: 1px solid #d6d6d6;
 }
 
 checkbox,
@@ -413,7 +417,6 @@ checkbox,
 textarea {
     max-width: 100%;
     min-height: 100px;
-    border: 1px solid #d6d6d6;
 }
 
 ::placeholder,
@@ -432,6 +435,8 @@ input {
 select {
     height: 40px;
 }
+
+*:focus {outline: none;}
 
 /* --------------------------------------------- */
 /* FOOTER SECTION STYLES */
@@ -490,3 +495,4 @@ footer {
 
 @import 'headings';
 @import 'navigation';
+@import 'media-queries';

@@ -1,0 +1,108 @@
+/* STYLES FOR LAPTOPS, 1023-1200px */
+@media only screen and (max-width: 1200px) {
+        .hero-text-box {
+        width: 100%;
+        padding: 0 4%;
+    }
+    
+    .menu {
+        margin-right: 5%;
+    }
+    
+    .logo {
+        margin-left: 1%;
+    }
+    
+    h3 {
+        font-size: 1.5vw;
+        line-height: 5vh;
+    }
+    
+    .feature-description {
+        font-size: 70%;
+        line-height: 3vh;
+    }
+    
+    .icon {
+        font-size: 6vh;
+    }
+    
+    .box {
+        height: 320px;
+        margin: 0px;
+    }
+    
+    .box:first-child {
+        margin-left: 1%;
+    }
+    
+    .box:last-child {
+        margin-right: 1%;
+    }
+    
+    .steps-box:last-child {
+        padding-left: 0%;
+    }
+    
+    .how-to-step {
+        width: 90%;
+    }
+    
+    .steps-copy {
+        font-size: 2vw;
+    }
+}
+
+/* STYLES FOR IPAD IN PORTRAIT MODE AS WELL AS SMALL LAPTOPS, 768-1023px */
+@media only screen and (max-width: 1023px) {
+    .menu li {
+        margin-left: 20px;
+        font-size: 2vw;
+    }
+    
+    .logo {
+        height: auto;
+        width: 90px;
+    }
+    
+    header {
+        height: 70vh;
+    }
+    
+    .hero-text-box {
+        top: 35%;
+    }
+    
+    .ingress {
+        width: 85%;
+        margin-left: 10%;
+    }
+    
+    .box {
+        width: 49%;
+        height: auto;
+    }
+    
+    .box:last-child,
+    .box:first-child {
+        margin: 0;
+    }
+    
+    h3 {
+        font-size: 100%;
+    }
+    
+    .feature-description {
+        font-size: 100%;
+    }
+}
+
+/* STYLES FOR TABLETS, 481-767px */
+@media only screen and (max-width: 767px) {
+    
+}
+
+/* STYLES FOR SMALLER SMARTPHONE, 0-480px */
+@media only screen and (max-width: 480px) {
+    
+}
