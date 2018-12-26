@@ -5,7 +5,9 @@
     border: 1px solid $brand-orange;
     border-radius: 30px;
     margin-right: 20px;
+    -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     display: inline-block;
 }

@@ -1,3 +1,10 @@
+/* STYTLES SPECIFICALLY FOR INTERNET EXPLORER 10+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .price-box li {
+        padding: 6px;
+    }
+}
+
 /* STYLES FOR LAPTOPS, 1023-1200px */
 @media only screen and (max-width: 1200px) {
         .hero-text-box {
@@ -148,7 +155,6 @@
     }
     
     .feature-description {
-        line-height: 5vh;
         font-size: 60%;
     }
     
@@ -228,7 +234,10 @@
     
     .price-box {
         font-size: 70%;
-        margin-top: 10px;
+    }
+    
+    .price-box:first-child {
+            margin-top: 15px;
     }
     
     .pricing {
