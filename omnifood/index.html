@@ -9,14 +9,17 @@
         <link rel="stylesheet" type="text/css" href="styles/styles.css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" />
         <link href="https://unpkg.com/ionicons@4.4.8/dist/css/ionicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
         <script async src="https://cdn.jsdelivr.net/npm/jay-respond@1.4.3/dest/respond.min.js"></script>
         <script async src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
         <script async src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
     </head>
     <body>
         <header>
-            <nav class="sticky-nav">
+            <nav>
                 <div class="row">
                 <img src="content/img/logo-white.png" alt="Omnifood logotyp" class="logo" />
                 <img src="content/img/logo.png" alt="Omnifood logotyp" class="logo-black" />
@@ -24,17 +27,17 @@
                         <li><a href="#features" class="nav-link">Food Delivery</a></li>
                         <li><a href="#how-it-works" class="nav-link">How it works</a></li>
                         <li><a href="#locations" class="nav-link">Our cities</a></li>
-                        <li><a href="#pricing" class="nav-link">Sign up</a></li>
+                        <li><a href="#contact-us" class="nav-link">Sign up</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food.<br />Hello super healthy meals.</h1>
-                <a href="#" class="main-button">I’m hungry</a>
-                <a href="#" class="secondary-button">Show me more</a>
+                <a href="#" class="main-button js--scroll-to-pricing">I’m hungry</a>
+                <a href="#" class="secondary-button js--scroll-to-features">Show me more</a>
             </div>
         </header>
-        <section id="features" class="section-features">
+        <section id="features" class="section-features js--section-features">
             <div class="row">
                 <h2>GET FOOD FAST &mdash; NOT FAST FOOD</h2>
                 <p class="ingress">Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!</p>
@@ -76,13 +79,13 @@
                 <li><figure class="food-photo"><img src="content/img/8.jpg" alt="Korean Bibimbap" /></figure></li>
             </ul>
         </section>
-        <section id="how-it-works" class="section-how-it-works grey">
+        <section id="how-it-works" class="section-how-it-works js--section-how-it-works grey">
             <div class="row">
                 <h2>HOW IT WORKS &mdash; SIMPLE AS 1, 2, 3</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
-                    <img class="app-image" src="content/img/app-iPhone.png" alt="iPhone app" />
+                    <img class="app-image js--app-image" src="content/img/app-iPhone.png" alt="iPhone app" />
                 </div>
                 <div class="col span-1-of-2 steps-box">
                     <div class="how-to-step">
@@ -102,7 +105,7 @@
                 </div>
             </div>
         </section>
-        <section id="locations" class="section-locations">
+        <section id="locations" class="section-locations js--section-locations">
             <div class="row">
                 <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
             </div>
@@ -200,13 +203,13 @@
                 </div>
             </div>
         </section>
-        <section id="pricing" class="section-pricing grey">
+        <section id="pricing" class="section-pricing js--section-pricing grey">
             <div class="row">
                 <h2>START EATING HEALTHY TODAY</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="border-box">
+                    <div class="border-box js--price-box">
                         <div class="price-box">
                             <h3>PREMIUM</h3>
                             <p class="pricing"><span class="price-figure">$399</span>/month</p>
@@ -273,7 +276,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-contact-us">
+        <section id="contact-us" class="section-contact-us js--section-contact-us">
             <div class="row">
                 <h2>WE'RE HAPPY TO HEAR FROM YOU</h2>
             </div>

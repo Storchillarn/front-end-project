@@ -518,3 +518,34 @@ footer {
 @import 'headings';
 @import 'navigation';
 @import 'media-queries';
+
+/* --------------------------------------------- */
+/* IMPORTING ADDITIONAL STYLES */
+/* --------------------------------------------- */
+
+.js--section-features .box > * {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--section-features .box.animated > * {
+    opacity: 1;
+}
+
+
+.js--section-locations > * {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--section-locations .animated > * {
+    opacity: 1;
+}
+
+.js--app-image {
+    opacity: 0;
+}
+
+.js--app-image.animated {
+    opacity: 1;
+}

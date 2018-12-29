@@ -1115,7 +1115,9 @@ section {
   border: 1px solid #e67e22;
   border-radius: 30px;
   margin-right: 20px;
+  -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   display: inline-block;
 }
@@ -1611,8 +1613,6 @@ h3 {
   font-size: 2vh;
   padding-bottom: 7px;
   border-bottom: 2px solid transparent;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.2s;
 }
 .menu li:hover,
 .menu li:active {
@@ -1624,7 +1624,7 @@ h3 {
   position: fixed;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
-  outline: 2px solid #e2e2e2;
+  outline: 2px solid #f3f3f3;
   z-index: 1;
   padding-top: 5px;
 }
@@ -1652,6 +1652,12 @@ h3 {
   color: #fff;
 }
 
+/* STYTLES SPECIFICALLY FOR INTERNET EXPLORER 10+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .price-box li {
+    padding: 6px;
+  }
+}
 /* STYLES FOR LAPTOPS, 1023-1200px */
 @media only screen and (max-width: 1200px) {
   .hero-text-box {
@@ -1891,6 +1897,34 @@ h3 {
   input[type=email], input[type=text], input[type=checkbox], textarea, select {
     margin-bottom: 10px;
   }
+}
+/* --------------------------------------------- */
+/* IMPORTING ADDITIONAL STYLES */
+/* --------------------------------------------- */
+.js--section-features .box > * {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--section-features .box.animated > * {
+  opacity: 1;
+}
+
+.js--section-locations > * {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--section-locations .animated > * {
+  opacity: 1;
+}
+
+.js--app-image {
+  opacity: 0;
+}
+
+.js--app-image.animated {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
